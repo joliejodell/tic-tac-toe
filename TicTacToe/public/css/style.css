@@ -1,0 +1,76 @@
+body {
+	background-color: white;
+}
+
+#playButton {
+	font-size: 16px;
+	height: 50px;
+	width: 240px;
+}
+
+div {
+	margin: 0 auto;
+	font-size: 10pt;
+	line-height: 18pt;
+	color: black;
+	max-width: 98%;
+	font-family: Arial, sans-serif;
+	width: 320px;
+}
+
+button {
+	font-size: 60px;
+	height: 75px;
+	margin: 4px 2px;
+	vertical-align: top;
+	width: 75px;
+	color: black;
+}
+
+#replayButton {
+	font-size: 16px;
+	height: 50px;
+	width: 240px;
+	color: black;
+}
+
+h1 {
+	text-align: left;
+}
+
+select {
+	font-size: 16px;
+}
+
+@media only screen and (max-device-width : 480px) {
+	div {
+		margin: 0 auto;
+		font-size: 30pt;
+		line-height: 18pt;
+		color: black;
+		max-width: 98%;
+		font-family: Arial, sans-serif;
+		width: 700px;
+	}
+	button {
+		font-size: 120px;
+		height: 200px;
+		margin: 10px 5px;
+		vertical-align: top;
+		width: 200px;
+		color: black;
+	}
+	#replayButton {
+		font-size: 50px;
+		height: 100px;
+		width: 635px;
+		color: black;
+	}
+	select {
+		font-size: 40px;
+		color: black;
+	}
+	h1 {
+		text-align: left;
+	}
+}
