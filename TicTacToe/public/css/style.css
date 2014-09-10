@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-image: url("../congruent_pentagon.png");
 }
 
 #playButton {
@@ -12,7 +12,7 @@ div {
 	margin: 0 auto;
 	font-size: 10pt;
 	line-height: 18pt;
-	color: black;
+	color: #034F46;
 	max-width: 98%;
 	font-family: Arial, sans-serif;
 	width: 320px;
@@ -20,26 +20,30 @@ div {
 
 button {
 	font-size: 60px;
+	color: #034F46;
 	height: 75px;
 	margin: 4px 2px;
 	vertical-align: top;
+	line-height: 90%;
 	width: 75px;
-	color: black;
+	font-family: 'Permanent Marker', cursive;
 }
 
 #replayButton {
-	font-size: 16px;
+	font-size: 18px;
 	height: 50px;
 	width: 240px;
-	color: black;
+	color: #034F46;
 }
 
 h1 {
 	text-align: left;
+	font-family: 'Permanent Marker', cursive;
 }
 
 select {
 	font-size: 16px;
+	color: #034F46;
 }
 
 @media only screen and (max-device-width : 480px) {
