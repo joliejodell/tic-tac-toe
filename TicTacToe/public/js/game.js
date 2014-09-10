@@ -4,14 +4,15 @@ var buttons = [ button1, button2, button3, button4, button5, button6, button7,
 		button8, button9 ];
 
 function checkCombo(b1, b2, b3) {
-	if (b1.innerHTML !== '' && b1.innerHTML === b2.innerHTML && b2.innerHTML === b3.innerHTML) {
+	if (b1.innerHTML !== '' && b1.innerHTML === b2.innerHTML
+			&& b2.innerHTML === b3.innerHTML) {
 		gameover = true;
-		b1.style.backgroundColor = '#6699FF';
-		b2.style.backgroundColor = '#6699FF';
-		b3.style.backgroundColor = '#6699FF';
+		b1.style.backgroundColor = '#50ACFF';
+		b2.style.backgroundColor = '#50ACFF';
+		b3.style.backgroundColor = '#50ACFF';
 
 	}
-	
+
 }
 
 function checkWin() {
@@ -58,4 +59,11 @@ function resetGame() {
 for (var i = 0; i < buttons.length; i++) {
 	buttons[i].onclick = sendPickSquare(i);
 }
-replayButton.onclick = resetGame;
+
+$('#replayButton').click(function() {
+	socket.emit('reset', "");
+});
+
+socket.on('reset', function() {
+	resetGame();
+});

@@ -5,12 +5,16 @@ var io = require('socket.io')(http);
 
 app.use("/", express.static('public'));
 
-io.on('connection', function(socket){
-  socket.on('move', function(move){
-    io.emit('move', move);
-  });
+io.on('connection', function(socket) {
+	socket.on('move', function(move) {
+		io.emit('move', move);
+	});
+	socket.on('reset', function(reset) {
+		io.sockets.emit('reset', reset);
+	});
+
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(3000, function() {
+	console.log('listening on *:3000');
 });
